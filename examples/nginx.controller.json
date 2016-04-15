@@ -9,7 +9,7 @@
     }
   },
   "spec":{
-    "replicas": 2,
+    "replicas": 3,
     "selector":{
       "name":"nginx"
     },
@@ -27,7 +27,7 @@
         "containers":[
           {
             "name":"nginx",
-            "image":"nginx"
+            "image":"akkerman/rpi-nginx"
           }
         ]
       }
