@@ -31,13 +31,6 @@
   vertical-align: middle;
 }
 
-.logo {
-  background: url('titlelogo.svg');
-  background-repeat: no-repeat;
-  height: 150px;
-  width: 600px;
-}
-
 .navbar-logo {
   margin-left: 10px;
   margin-top: 5px;
@@ -45,25 +38,15 @@
 }
 
 #nav-logo-img {
-  height: 42px;
-}
-
-.navbar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  background-color: #447AE8;
-  border: 0px;
-  border-radius: 0;
+  height: 0px;
 }
 
 .nodesbar {
     position: absolute;
     left: 0;
     right: 0;
-    top: 50px;
-    height: 200px;
+    top: 0px;
+    height: 150px;
     background-color: light-grey;
     border-bottom: thick solid black;
 }

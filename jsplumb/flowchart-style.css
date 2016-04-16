@@ -22,7 +22,8 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
-.flowchart-demo .window { border:1px solid #346789;
+.flowchart-demo .window {
+  border:1px solid #346789;
   box-shadow: 2px 2px 19px #aaa;
   -o-box-shadow: 2px 2px 19px #aaa;
   -webkit-box-shadow: 2px 2px 19px #aaa;
@@ -32,8 +33,10 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   opacity:0.8;
   filter:alpha(opacity=80);
   text-align:center;
-  z-index:20; position:absolute;
-  font-family:helvetica;padding:0.5em;
+  z-index:20;
+  position:absolute;
+  font-family:helvetica;
+  padding:0.5em;
   font-size:1.2em;
 }
 

@@ -27,6 +27,8 @@ var truncate = function(str, width, left) {
 	return str;
 }
 
+var TL_FILTER="project%3Dping-pong-peng";
+
 var pods = [];
 var services = [];
 var controllers = [];
@@ -290,7 +292,7 @@ var insertUse = function(name, use) {
 
 var loadData = function() {
 	var deferred = new $.Deferred();
-	var req1 = $.getJSON("/api/v1/pods?labelSelector=visualize%3Dtrue", function( data ) {
+	var req1 = $.getJSON("/api/v1/pods?labelSelector=" + TL_FILTER, function( data ) {
 		pods = data;
 		$.each(data.items, function(key, val) {
     	val.type = 'pod';
@@ -305,7 +307,7 @@ var loadData = function() {
     });
 	});
 
-	var req2 = $.getJSON("/api/v1/replicationcontrollers?labelSelector=visualize%3Dtrue", function( data ) {
+	var req2 = $.getJSON("/api/v1/replicationcontrollers?labelSelector=" + TL_FILTER, function( data ) {
 		controllers = data;
 		$.each(data.items, function(key, val) {
       val.type = 'replicationController';
@@ -314,7 +316,7 @@ var loadData = function() {
 	});
 
 
-	var req3 = $.getJSON("/api/v1/services?labelSelector=visualize%3Dtrue", function( data ) {
+	var req3 = $.getJSON("/api/v1/services?labelSelector=" + TL_FILTER, function( data ) {
 		services = data;
 		//console.log("loadData(): Services");
 		//console.log(services);
@@ -360,7 +362,7 @@ function refresh(instance) {
 
 		setTimeout(function() {
 			refresh(instance);
-		}, 2000);
+		}, 4000);
   });
 }
 
