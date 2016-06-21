@@ -27,7 +27,7 @@ var truncate = function (str, width, left) {
     return str;
 };
 
-var TL_FILTER = "project%3Dping-pong-peng";
+var TL_FILTER = "project%3Dping-pong";
 
 var pods = [];
 var services = [];
